@@ -18,11 +18,8 @@ app.listen(3000, async()=>{
 
      // const tweets = await Tweet.find({userEmail:'a@b.com'});
      const tweetRepo = new TweetRepository();
-     const tweet = await tweetRepo.getWithComments('6760f0bac157da1753dee763');
-     // const comment = await Comment.create({content: 'new cpmment'});
-     // tweet.comments.push(comment);
-     // await tweet.save();
-     console.log(tweet);
+     const tweet = await tweetRepo.getAll(0,4);
+     console.log(tweet[0].contentWithEmail);
 
 
 })
