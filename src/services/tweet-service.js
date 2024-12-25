@@ -1,4 +1,4 @@
-const { TweetRepository, HashtagRepository } = require('../repository/index')
+import{ TweetRepository, HashtagRepository } from '../repository/index.js'
 
 class TweetService {
     constructor(){
@@ -25,7 +25,7 @@ class TweetService {
     }
 }
 
-module.exports = TweetService;
+export default TweetService;
 
 
 //todo create hashtags and add here
@@ -33,5 +33,4 @@ module.exports = TweetService;
          * 1. bulkcreate in mongoose
          * 2. filter title of hashtag based on multiple tags
          * 3. how to add Tweet id inside all the hashtags
-         * 
          */
