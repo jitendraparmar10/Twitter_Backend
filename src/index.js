@@ -8,6 +8,6 @@ app.listen(3000, async()=>{
      console.log('server started');
      await connect();
      console.log('mongo db connected');
-     let ser = new service();
-     await ser.create({content: 'Done with #refector ?'});
+     // let ser = new service();
+     // await ser.create({content: 'I love #AnimE ?'});
 });
