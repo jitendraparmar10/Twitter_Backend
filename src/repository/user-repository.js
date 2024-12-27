@@ -6,10 +6,10 @@ class UserRepository extends CrudRepository{
         super(User);
     }
 
-    async findByUserAndLikeable(data){
+    async findBy(data){
         try {
-            const like = await this.Like.findOne(data);
-            return like;
+            const response = await User.findOne(data);
+            return response;
         } catch (error) {
             throw error;
         }
